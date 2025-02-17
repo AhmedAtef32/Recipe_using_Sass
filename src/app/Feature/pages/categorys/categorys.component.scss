@@ -1,0 +1,62 @@
+@import "../../../core/sass/extendClasses";
+@import "../../../core/sass/variables";
+.category__lists{
+  display: none;
+  gap: 30px;
+ margin: {
+  top: 20px;
+  bottom: 20px;
+ } ;
+  flex-wrap:wrap ;
+  border-bottom: 1px solid #0000001d;
+  padding-bottom: 20px;
+
+  .category__item{
+    border: 1px solid #6b7280;
+    color: #6b7280 ;
+    font : {
+      size: 1rem;
+      weight: 600;
+    }
+    border-radius:30px;
+    padding: 8px 15px;
+    transition: 0.3s ease all;
+    &:hover{
+      background-color: $white-color;
+      box-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);
+    }
+  }
+
+  .category__item.active{
+    border: 1px solid black;
+    color: white ;
+    background-color: black;
+  }
+
+
+}
+
+
+.search__input{
+  margin-block:20px ;
+  display: block;
+  select{
+    width: 100%;
+    border-radius: 20px;
+
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .category__lists{
+  display: flex;
+
+  }
+  .search__input{
+    display: none;
+  }
+}
+
+
+

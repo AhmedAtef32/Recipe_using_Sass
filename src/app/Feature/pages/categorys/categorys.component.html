@@ -1,0 +1,24 @@
+<ul class="category__lists ">
+  <li><a class="category__item" routerLink="AllMeals" routerLinkActive="active" >All</a></li>
+
+  @for (category of categoriesName; track $index) {
+
+    <li><a class="category__item" [routerLink]="category" routerLinkActive="active" > {{category}} </a></li>
+
+  }
+
+</ul>
+
+
+
+<div class="search__input">
+
+  <select #search (input)="getInputValue()">
+    @for (category of categoriesName; track $index) {
+
+      <option  value="{{category}}"> {{category}} </option>
+     }
+     </select>
+
+
+</div>

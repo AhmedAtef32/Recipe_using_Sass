@@ -1,0 +1,29 @@
+@import "../../../core/sass/extendClasses";
+@import "../../../core/sass/variables";
+.not__found{
+  height: 70vh;
+  @extend %flex-center-center;
+
+  .not__found__content{
+
+    .not__found__img{
+      img{
+          width: 300px;
+      }
+    }
+
+    .not__found__btn{
+      text-align: center;
+      button{
+        background-color: $main-color;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: $white-color;
+      font : {
+        size: 1.2rem;
+        weight: 600;
+      }
+      }
+    }
+  }
+}

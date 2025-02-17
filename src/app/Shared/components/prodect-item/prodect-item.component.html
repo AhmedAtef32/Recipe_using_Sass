@@ -1,0 +1,10 @@
+<div class="card">
+  <div class="card-item">
+    <div class="card__img">
+      <img [src]=" meal.strMealThumb" [alt]="meal.strMeal">
+    </div>
+    <h3 class="card__title"> {{meal.strMeal}}</h3>
+    <p class="card__country"> <i class="fa-solid fa-earth-americas"></i> {{meal.strArea}} </p>
+    <button class="card__btn" [routerLink]="['/Details', meal.idMeal]">View Recipe</button>
+  </div>
+</div>

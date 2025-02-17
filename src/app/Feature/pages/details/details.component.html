@@ -1,0 +1,65 @@
+
+<section>
+  <div class="container">
+    <div class="grid gap-4 items-stretch lg:grid-cols-3">
+
+      <div>
+        <h1 class="text-[48px] font-semibold pacifico__font">{{mealInfo.strMeal}}</h1>
+        <div class="w-full overflow-hidden ">
+          <img class="w-full rounded-2xl mb-8" [src]="mealInfo.strMealThumb" alt="">
+        </div>
+        <div class="btn-details flex justify-center
+        gap-11  mb-3">
+          <a [href]="mealInfo.strYoutube" target="_blank"
+            class="bg-[#DC2626] text-white py-3 px-6 rounded-lg text-[18px]"><i class="fa-brands fa-youtube me-3"></i>
+            Youtube</a>
+          <a [href]="mealInfo.strSource" target="_blank"
+            class="bg-[#21BA75] text-white py-3 px-6 rounded-lg text-[18px]"><i class="fa-solid fa-earth-asia me-3"></i>
+            Source</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="text-[18px] md:mt-20">
+          {{mealInfo.strInstructions}}
+
+        </p>
+      </div>
+
+      <div>
+        <div class="Ingredients bg-white py-4 px-8 mt-10 rounded-2xl w-full">
+          <h2 class="text-[24px] font-semibold pb-2 border-b-[5px] border-b-[#E5E7EB]">Ingredients </h2>
+
+          <ul class="divide-y-2">
+            <li class="text-[18px] py-3 flex justify-between">
+              <h4>Sushi Rice:</h4> <span>  {{mealInfo.strMeasure1}}  </span>
+            </li>
+            <li class="text-[18px] py-3 flex justify-between">
+              <h4>Rice wine:</h4> <span> {{mealInfo.strMeasure2}} </span>
+            </li>
+            <li class="text-[18px] py-3 flex justify-between">
+              <h4>Caster Sugar:</h4> <span> {{mealInfo.strMeasure3}} </span>
+            </li>
+            <li class="text-[18px] py-3 flex justify-between">
+              <h4>Mayonnaise: </h4> <span> {{mealInfo.strMeasure4}} </span>
+            </li>
+            <li class="text-[18px] py-3 flex justify-between">
+              <h4>Rice wine:</h4> <span> {{mealInfo.strMeasure5}} </span>
+            </li>
+
+            <li class="text-[18px] py-3 flex justify-between">
+              <h4>Soy Sauce:</h4> <span> {{mealInfo.strMeasure6}} </span>
+            </li>
+            <li class="text-[18px] py-3 flex justify-between">
+              <h4>Cucumber:</h4> <span> {{mealInfo.strMeasure7}} </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+

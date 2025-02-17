@@ -1,0 +1,55 @@
+@import "../../sass/variables";
+@import "../../sass/extendClasses";
+
+footer{
+  position: relative;
+  z-index: 50;
+  background-color: $white-color;
+
+  padding: 30px 30px 30px;
+  .header__footer{
+
+  @extend %flex-between;
+    border-bottom:1px solid #e5e7eb;
+    padding-bottom: 20px;
+    .header__img{
+      @extend %flex-center;
+      font: {
+        size: 1.5625rem;
+        weight: 600;
+      }
+    }
+
+    .header__route{
+      color: #1d4ed8;
+      font : {
+        size: 1.5rem;
+        weight: 700;
+      }
+    }
+  }
+
+  .footer__end{
+    p{
+      text-align: center;
+      color: #6b7280;
+      margin-top: 20px;
+      font : {
+        size: 14px ;
+        weight: 400;
+      }
+      a{
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  footer{
+    padding: 30px 150px 30px;
+  }
+}

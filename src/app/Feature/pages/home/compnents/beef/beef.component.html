@@ -1,0 +1,12 @@
+<section>
+  <div class="container">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 overflow-hidden">
+
+      @for (meal of allmeals; track $index) {
+      <app-products-by-name [meal]="meal"></app-products-by-name>
+      }
+
+    </div>
+
+  </div>
+</section>

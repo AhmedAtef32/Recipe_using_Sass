@@ -1,0 +1,61 @@
+@import "../../../core/sass/extendClasses";
+@import "../../../core/sass/variables";
+.card{
+  margin-top: 30px;
+  transition: all .8s ease;
+
+  transition: all .8s ease;
+
+
+
+
+  &:hover{
+    transform: scale(1.05);
+    .card__img{
+      img{
+        transform: rotate(360deg) ;
+      }
+    }
+  }
+  .card-item{
+    border-radius: 20px;
+    background-color: $white-color;
+    text-align: center;
+
+    .card__img{
+      position: relative;
+      top: -20px;
+      img{
+        border-radius: 50%;
+        width: 80%;
+        margin: auto;
+        transition: all .8s ease;
+        box-shadow:-1px 16px 15px rgba(0, 0, 0, 0.3647058824);
+
+      }
+    }
+    .card__title{
+      font : {
+        size: 20px;
+        weight: 600;
+      }
+      padding-block:5px ;
+    }
+    .card__btn{
+      background-color: #21ba75;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      border: none;
+      transition: all .3s ease;
+      margin-block:0px 10px ;
+      &:hover{
+        transform: scale(1.06);
+        background-color: $sec-color;
+      }
+    }
+
+
+  }
+
+}

@@ -1,0 +1,61 @@
+@import  "../../sass/_variables";
+.sidebar__lists{
+  background-color: $side-bar-bg-color;
+
+  .sidebar__list__item.active{
+    background-color: $main-color;
+    padding: 15px;
+    border-radius: .625rem;
+    box-shadow: $shadow-sidebar-item;
+    border: none;
+    transition: all .3s ease;
+    &:hover{
+      transform: scale(1.04);
+      box-shadow:none;
+    }
+    a{
+      color: $white-color;
+
+     font: {
+        size: 1.125rem;
+        weight: 600;
+     }
+      span{
+        i{
+          margin-right: .3125rem;
+        }
+      }
+    }
+  }
+
+
+  .sidebar__list__item{
+    background-color: $white-color;
+    padding: 15px;
+    border-radius: .625rem;
+    transition: all .3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.479);
+    margin-top: 15px;
+    &:hover{
+      transform: scale(1.05);
+    box-shadow: $shadow-sidebar-item;
+
+    }
+    a{
+      color: $black-color;
+      display: block;
+      width: 100%;
+      margin-left: 10px;
+     font: {
+        size: 1.125rem;
+        weight: 500;
+     }
+    }
+  }
+
+
+}
+
+
+
+

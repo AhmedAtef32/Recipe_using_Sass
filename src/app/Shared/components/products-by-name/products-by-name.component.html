@@ -1,0 +1,9 @@
+<div class="card">
+  <div class="card-item">
+    <div class="card__img">
+      <img [src]=" meal.strMealThumb" [alt]="meal.strMeal">
+    </div>
+    <h3 class="card__title"> {{meal.strMeal.split(' ').splice(0,2).join('-')}}</h3>
+    <button class="card__btn" [routerLink]="['/Details', meal.idMeal]">View Recipe</button>
+  </div>
+</div>
